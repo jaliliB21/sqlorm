@@ -16,13 +16,15 @@ It abstracts complex SQL queries into simple Python methods, making database man
 ## Installation  
 ```bash
 pip install sqliteorm_py
+```
 
 Getting Started
 1. Create a New Project
 
+```bash
 sqliteorm-admin createproject myproject
 cd myproject
-
+```
 2. Define Models
 
 ```python
