@@ -37,3 +37,34 @@ class User(BaseModel):
     age = IntegerField()  
 
 ```
+
+### 3. Apply Migrations
+```bash
+py manage.py migrations
+``
+
+### 4. Insert Data
+```python
+from models import User  
+
+User.insert(name="Alice", age=30)  
+User.insert(name="Bob", age=25)  
+```
+### 5. Query Data
+```python
+users = User.all()  
+for user in users:  
+    print(user.name, user.age)    
+```
+### 6. Update Records
+```python
+User.update({"name": "Alice"}, age=35)   
+```
+
+### 7. Delete Records
+```python
+User.delete(name="Bob")  
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss the proposed changes
