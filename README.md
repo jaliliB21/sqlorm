@@ -38,9 +38,10 @@ class User(BaseModel):
 ```
 
 ### 3. Apply Migrations
+
 ```bash
 py manage.py migrations
-``
+```
 
 ### 4. Insert Data
 ```python
