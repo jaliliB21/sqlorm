@@ -35,7 +35,6 @@ class User(BaseModel):
     id = IntegerField(primary_key=True, autoincrement=True)  
     name = CharField(max_length=100, unique=True)  
     age = IntegerField()  
-
 ```
 
 ### 3. Apply Migrations
