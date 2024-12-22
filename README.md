@@ -28,7 +28,8 @@ cd myproject
 ### 2. Define Models
 
 ```python
-from sqliteorm.basemodel import BaseModel, CharField, IntegerField  
+from sqliteorm_py.basemodel import BaseModel
+from sqliteorm_py.fields import CharField, IntegerField
 
 class User(BaseModel):  
     table_name = "users"  
